@@ -294,13 +294,12 @@ class LoadSaveMenu : ListMenu
 				TextureID iconTextureId;
 				if (selectedNode.bMissingWads)
 				{
-					//Stringtable.Localize("$MNU_NOFILES");
-					text = "Missing Content";
+					text = Stringtable.Localize("$MNU_SAVEMISSINGWADS");
 					iconTextureID = warningTextureId;
 				}
 				else if (selectedNode.bOldVersion)
 				{
-					text = "Old Version";
+					text = Stringtable.Localize("$MNU_SAVEOLDVERSION");
 					iconTextureID = errorTextureId;
 				}
 
